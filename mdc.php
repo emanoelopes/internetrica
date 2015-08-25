@@ -9,9 +9,8 @@
         <form action="mdc.php" method="post">
                 <input type="text" name="n1" placeholder="digite o primeiro numero"/>
                 <input type="text" name="n2" placeholder="digite o segundo numero"/>
-
                 <input type="submit" value="calcular"/>
-        </form>
+</form>
 <?php
 $n1 = $_POST['n1'];
 $n2 = $_POST['n2'];
