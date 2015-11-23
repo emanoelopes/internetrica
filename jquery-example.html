@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(function(){
+    $("#escondep").click(function(){
+        $("p").hide("slow");
+    });
+    $("#showp").click(function(){
+        $("p").show("fast");
+    });
+    $("#escondediv").click(function(){
+    	$("div").hide("slow").show("fast");
+    });
+    $("#showdiv").click(function(){
+    	$("div").show("fast");
+    });
+    $("#toggle").click(function(){
+    	$(".lead").toggle("fast");
+    });
+ });
+</script>
+</head>
+<body>
+
+<p class="lead">Sou um <mark>parágrafo.</mark></p>
+<div id="nome" class="lead">Sou uma div.</div>
+<button class="btn btn-default" id="escondep">Esconder os parágrafos</button>
+<button class="btn btn-default" id="showp">Mostra os parágrafos</button><br>
+<button class="btn btn-default" id="escondediv">Esconder as divs</button>
+<button class="btn btn-default" id="showdiv">Mostrar as divs</button>
+<button class="btn btn-default" id="toggle">Esconder/Mostrar tudo</button>
+</body> 
+</html>
